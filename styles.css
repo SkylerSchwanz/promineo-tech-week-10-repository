@@ -1,0 +1,39 @@
+:root {
+    /* Color Pallete */
+    --cornflowerblue: #4695ED;
+    --darkerblue: #4C6293;
+    --lighterblue: #E4F0FF;
+    --lighterbrown: #634100;
+}
+
+html, body {
+    height: 100vh;
+}
+
+header .row {
+    width: fit-content;
+}
+
+#list-container {
+    max-height: 75vh;
+    overflow-y: auto;
+}
+
+#clock-symbol {
+    font-size: xx-large;
+}
+
+#title-container {
+    background-color: var(--darkerblue);
+    filter:drop-shadow(0px 0px 5px);
+   
+    max-width: fit-content;
+}
+
+#title-container * {
+    color: var(--lighterblue);
+}
+
+#add-task-menu {
+    filter:drop-shadow(0px 0px 2px);
+}

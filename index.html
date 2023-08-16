@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+
+    <title>Taskify</title>
+  </head>
+  <body
+    class="d-flex flex-column justify-content-between"
+    style="background-color: #4695ed; background-image: linear-gradient(to bottom right, #4c6293, #4695ed)"
+  >
+    <header class="container-fluid p-5 w-100 d-flex flex-row justify-content-sm-center text-center justify-content-lg-start">
+      <div class="row">
+        <div id="title-container" class="col rounded-pill d-flex flex-row">
+          <i id="clock-symbol" class="col bi bi-clock align-self-center"></i>
+          <h1 class="display-4">Taskify</h1>
+        </div>
+      </div>
+    </header>
+
+    <main class="m-5 d-flex flex-column h-75 justify-content-around" style="align-items: center; justify-content: center">
+      
+        <div id="list-background"class="container-fluid h-75 w-75 rounded p-2" style="background-color: rgba(137, 164, 197, 0.55)">
+
+          <div id="list-container" class="container-fluid p-0 rounded bg-white h-100">
+              
+          </div>
+
+        </div>
+
+            </div>
+
+        </div>
+
+      <div id="add-task-menu" class="row">
+
+        <div class="d-flex flex-row p-2 rounded bg-white">
+
+          <div class="form-row justify-content-center justify-content-around">
+
+            <div class="col col-10">
+              <label class="sr-only" for="inlineFormInput">Task</label>
+              <input required type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Task" />
+            </div>
+
+            <div class="col-auto border rounded p-1">
+                <label for="appt-time" class="font-italic">Time of Task: </label>
+                <input required type="datetime-local" id="appt-time" name="appt-time" class="border-0">
+            </div>
+
+          </div>
+
+          <div class="col-auto pt-3">
+            <button id="new-task-button" type="submit" class="btn btn-outline-primary btn-lg rounded-pill mb-2" type="button">Create New Task</button>
+          </div>
+
+        </div>
+
+      </div>
+
+    </main>
+
+    <footer></footer>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
